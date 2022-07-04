@@ -104,5 +104,8 @@
       "./node_modules/@types"
     ],
     "moduleResolution": "Node"
+  },
+  "ts-node": {
+    "esm": true
   }
 }
