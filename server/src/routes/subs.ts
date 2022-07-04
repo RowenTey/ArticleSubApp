@@ -24,8 +24,8 @@ router.post("/session", checkAuth, async (req, res) => {
                 quantity: 1
             }
         ],
-        success_url: "http://localhost:3000/articles",
-        cancel_url: "http://localhost:3000/article-plans",
+        success_url: "https://sub-app-mern.netlify.app/articles",
+        cancel_url: "https://sub-app-mern.netlify.app/article-plans",
         customer: user?.customerStripeId
     }, {
         apiKey: process.env.STRIPE_SECRET_KEY
