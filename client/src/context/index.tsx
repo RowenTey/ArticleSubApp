@@ -67,7 +67,7 @@ const UserProvider = ({children}: any) => {
                 error: null
             })
         }
-    }, []);
+    });
     
     return (
         <UserContext.Provider value={[user, setUser]}>
