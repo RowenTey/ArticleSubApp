@@ -43,13 +43,13 @@ const ArticlesPlan = () => {
     }, []);
     
     const fetchPrices = async () => {
-        const {data: response} = await axios.get("http://localhost:8080/subs/prices");
+        const {data: response} = await axios.get("https://sub-app-mern.herokuapp.com/subs/prices");
         setPrices(response.data);
     }
     
     const createSession = async (priceId: string) => {
         const {data: response} = await axios.post(
-            "http://localhost:8080/subs/session",
+            "https://sub-app-mern.herokuapp.com/subs/session",
             {
                 priceId
             }

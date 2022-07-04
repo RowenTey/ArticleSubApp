@@ -31,13 +31,13 @@ const ModalComponent = ({text, variant, isSignupFlow}: ModalProps) => {
     const handleClick = async () => {
         let data;
         if (isSignupFlow) {
-            const {data: signUpData} = await axios.post("http://localhost:8080/auth/signup", {
+            const {data: signUpData} = await axios.post("https://sub-app-mern.herokuapp.com/auth/signup", {
                 email,
                 password,
             });
             data = signUpData;
         } else {
-            const {data: loginData} = await axios.post("http://localhost:8080/auth/login", {
+            const {data: loginData} = await axios.post("https://sub-app-mern.herokuapp.com/auth/login", {
                 email,
                 password
             });

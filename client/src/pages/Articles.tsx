@@ -64,7 +64,7 @@ const Articles = () => {
     }, [])
     
     const fetchArticles = async () => {
-        const {data: response} = await axios.get("http://localhost:8080/articles");
+        const {data: response} = await axios.get("https://sub-app-mern.herokuapp.com/articles");
         setArticles(response);
     }
     
