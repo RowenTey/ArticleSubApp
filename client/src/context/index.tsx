@@ -67,7 +67,7 @@ const UserProvider = ({children}: any) => {
                 error: null
             })
         }
-    });
+    }, []); // eslint-disable-line react-hooks/exhaustive-deps
     
     return (
         <UserContext.Provider value={[user, setUser]}>
