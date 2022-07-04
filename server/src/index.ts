@@ -22,7 +22,11 @@ mongoose
         app.use("/auth", authRoutes);
         app.use("/subs", subsRoutes);
         app.use("/articles", articlesRoutes);
-                
+        
+        app.get("/", (req, res) => {
+            res.send("SERVER IS RUNNING!")
+        })
+        
         app.listen(8080, () => {
             console.log("Now listening to port 8080!")
         });
