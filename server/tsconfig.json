@@ -103,5 +103,6 @@
       "@types",
       "./node_modules/@types"
     ],
+    "moduleResolution": "Node"
   }
 }
