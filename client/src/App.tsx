@@ -1,4 +1,4 @@
-import { HashRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter , Routes, Route } from "react-router-dom";
 import Nav from './components/Nav/Nav';
 import Articles from "./pages/Articles";
 import ArticlesPlan from "./pages/ArticlesPlan";
@@ -7,7 +7,7 @@ import { ProtectedRoute } from "./routes/ProtectedRoutes";
 
 function App() {
   return (
-    <HashRouter>
+    <BrowserRouter>
       <Nav/>
       <Routes>
         <Route path="/" element={<LandingPage/>}/>
@@ -18,7 +18,7 @@ function App() {
           <Route path="/article-plans" element={<ArticlesPlan/>}/>
         </Route>
       </Routes>
-    </HashRouter>
+    </BrowserRouter>
   );
 }
 
