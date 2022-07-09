@@ -1,8 +1,9 @@
 import { useContext } from "react";
-import { Navbar, NavItem, NavLink} from "react-bootstrap";
+import { Navbar, NavItem, NavLink } from "react-bootstrap";
 import { Link, useNavigate } from "react-router-dom";
 import styled from "styled-components";
 import { UserContext } from "../../context";
+import './Nav.css';
 
 const LeftNavContainer = styled.div`
     margin-left: auto;
@@ -20,14 +21,14 @@ const Nav = () => {
     }
     
     return (
-        <Navbar>
+        <Navbar className="nav-bar">
             <NavItem>
-                <Link to="/" className="nav-link">Home</Link>
+                <Link to="/" className="nav-link nav-item">Home</Link>
             </NavItem>
             {state.data && (
                 <LeftNavContainer>
                     <NavItem>
-                        <NavLink onClick={handleLogout}>Logout</NavLink>
+                        <NavLink onClick={handleLogout} className="nav-item">Logout</NavLink>
                     </NavItem>
                 </LeftNavContainer>
             )}

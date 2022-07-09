@@ -1,0 +1,11 @@
+.nav-bar {
+    background-color: rgb(5, 148, 112);
+}
+
+.nav-item {
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.nav-item:hover {
+    color: white;
+}
