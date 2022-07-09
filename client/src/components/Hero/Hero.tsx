@@ -4,7 +4,7 @@ import ModalComponent from "../Modal/Modal";
 
 const HeroComponent = styled.header`
     padding: 5rem 0;
-    height 60vh;
+    height: 90vh;
     background-image: url("https://images.unsplash.com/photo-1491555103944-7c647fd857e6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80");
     background-size: cover;
     background-position: center;
@@ -15,6 +15,8 @@ const HeaderContainer = styled.div`
     padding: 3rem;
     color: white;
     width: 32.5rem;
+    position: relative;
+    bottom: 2rem;
 `;
 
 const Heading = styled.h1`
